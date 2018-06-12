@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_results"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsFragment">
+
+
+    <LinearLayout
+        android:id="@+id/results_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/results" />
+
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:id="@+id/waveHydrationLvl"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="24dp"
+            app:wlv_borderColor="@color/colorPrimaryDark"
+            app:wlv_borderWidth="2dp"
+            app:wlv_progressValue="79"
+            app:wlv_round_rectangle="true"
+            app:wlv_shapeType="circle"
+            app:wlv_titleBottom="Ureaqa Score"
+            app:wlv_titleBottomSize="20sp"
+            app:wlv_titleCenter="--"
+            app:wlv_titleCenterColor="@android:color/white"
+            app:wlv_titleCenterSize="56sp"
+            app:wlv_titleCenterStrokeColor="@color/colorPrimary"
+            app:wlv_titleCenterStrokeWidth="2dp"
+            app:wlv_triangle_direction="north"
+            app:wlv_waveAmplitude="40"
+            app:wlv_waveColor="@color/colorPrimary"
+            app:wlv_wave_background_Color="@android:color/white"
+            app:wlv_titleBottomColor="@android:color/white" />
+
+
+        <TextView
+            android:id="@+id/tvDrinkAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 mL"
+            android:textAlignment="center"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvDrinkMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suggested Water Intake"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvLastTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/last_test"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:id="@+id/bResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="@string/get_updated_results" />
+    </LinearLayout>
+
+</FrameLayout>

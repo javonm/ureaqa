@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Test"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:text="Username" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvHydrationFeel"
+                android:layout_width="383dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="25dp"
+                android:text="How hydrated do you feel?"
+                android:textSize="16sp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tvHydrationLvlGuess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="100"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sbGuessLvl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:progress="80"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvHydrationPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="I'm optimally hydrated! Ready to race!"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/bTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Update Timestamp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTimestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2018-04-19 6:44:00"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etSpecGrav"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Specific Gravity"
+                android:inputType="numberDecimal"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/bUrine"
+                android:layout_width="18dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="->"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvHydrationLvl"
+                android:layout_width="50dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:text="-- %"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bSendData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Start Test" />
+
+
+    </LinearLayout>
+</FrameLayout>

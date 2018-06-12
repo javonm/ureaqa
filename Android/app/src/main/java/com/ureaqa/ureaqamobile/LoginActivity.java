@@ -52,12 +52,13 @@ public class LoginActivity extends AppCompatActivity {
 
                                               @Override
                                               public void onResponse(String response) {
-
+                                                    /*
                                                   AlertDialog.Builder error = new AlertDialog.Builder(LoginActivity.this); //returns the response and error message from php, should disappear if things go well
                                                   error.setMessage(response)
                                                           .setNegativeButton("Retry", null)
                                                           .create()
                                                           .show();
+                                                    */
 
                                                   try {
                                                       JSONObject jsonResponse = new JSONObject(response);
@@ -82,9 +83,10 @@ public class LoginActivity extends AppCompatActivity {
                                                           LoginActivity.this.startActivity(intent);
                                                       }
                                                       else {
+                                                          String errorMsg = jsonResponse.getString("error");
                                                           AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-                                                          builder.setMessage("Login Failed")
-                                                                  .setNegativeButton("Retry", null)
+                                                          builder.setMessage("Login Failed \n"+errorMsg)
+                                                                  .setNegativeButton("Okay", null)
                                                                   .create()
                                                                   .show();
                                                       }

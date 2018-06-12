@@ -31,4 +31,11 @@
     <string name="mL_water">mL of water </string>
     <string name="L_water">L of water </string>
     <string name="asap">as soon as possible.</string>
+    <string name="insights">Insights</string>
+    <string name="settings">Settings</string>
+    <string name="test">New Test</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_test">New Test</string>
 </resources>

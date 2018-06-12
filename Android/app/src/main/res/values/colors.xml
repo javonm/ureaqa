@@ -7,4 +7,13 @@
     <color name="material_teal">#009688</color>
     <color name="material_teal_light">#52c7b8</color>
     <color name="material_teal_dark">#00675b</color>
+
+    <color name="ureaqa_5">#006946</color>  // 00 105 70
+    <color name="ureaqa_10">#5a8c00</color> // 90 140 00
+    <color name="ureaqa_15">#789600</color> //120 150 00
+    <color name="ureaqa_20">#91a000</color> //145 160 00
+    <color name="ureaqa_25">#aaa000</color> //170 160 00
+    <color name="ureaqa_30">#b4a500</color> //180 165 00
+
+    <color name="white">#aaffffff</color>
 </resources>

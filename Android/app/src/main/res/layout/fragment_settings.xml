@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings" />
+
+        <EditText
+            android:id="@+id/etPasswordCurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Current Password"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/activity_vertical_margin" />
+
+        <EditText
+            android:id="@+id/etPasswordNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="New Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/bPasswordUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="32dp">
+
+            <EditText
+                android:id="@+id/etWeightNew"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="new weight"
+                android:inputType="number"
+                android:paddingTop="8dp" />
+
+            <ToggleButton
+                android:id="@+id/tbWeight"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:text="ToggleButton"
+                android:textOff="@string/lbs"
+                android:textOn="@string/kg" />
+
+            <Button
+                android:id="@+id/bWeightUpdate"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Update Weight" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
